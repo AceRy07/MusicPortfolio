@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  /* Tailwind v4 renk formatı */
+  --color-dark-bg: #09090b;
+  --color-card-bg: #121215;
+  --color-accent: #8b5cf6;
+}
+
+/* Sıfırlama kurallarına Tailwind v4'te gerek kalmaz ama özel olarak kalsın istersen: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
