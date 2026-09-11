@@ -19,18 +19,32 @@
 
     <!-- Custom Styles (if any) -->
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Main Container -->
-    <div class="w-auto min-h-screen bg-dark-bg">
-        <div class="container-header">
-            <header class="text-white mx-4 px-4 w-24 h-44">
-                <nav>
-                    <a href="index.html">4Th</a>
-                </nav>
+    <div class="hero-container w-full min-h-screen">
+        <div class="w-full">
+            <header class="navbar max-w-7xl flex justify-between items-center w-full">
+                <div class="navbar__logo">
+                    <a href="index.html" class="navbar__link text-white tracking-widest hover:opacity-80 transition-opacity">4Th</a>
+                </div>
+
+                <!-- Hamburger Menü (Tüm ekranlarda BEM stiliyle sağ üstte) -->
+                <button class="menu-btn" aria-label="Open Menu">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                </button>
             </header>
         </div>
+
+        <main>
+            <div>
+                <p>The 4Th New Album</p>
+                <h1>Title of the Album</h1>
+            </div>
+        </main>
     </div>
   
 

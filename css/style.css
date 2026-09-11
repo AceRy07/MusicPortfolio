@@ -13,3 +13,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.hero-container {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  
+}
+
+.navbar__logo {
+  color: #e9deca;
+  font-size: 1.5rem; /* Logo yazı boyutu */
+}
+
+.menu-btn {
+  width: 30px;
+  height: 24px;
+  background: transparent;  /* Arka plan şeffaf */
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;       /* Çizgileri dikeyde ortala */
+}
+
+.menu-btn__line {
+  width: 100%;              /* Kendi kutusunu tamamen kaplasın */
+  height: 4px;
+  background-color: #333;   /* Çizgi rengi (koyu gri/siyah) */
+  border-radius: 4px;       /* Çizgi köşelerini hafif yuvarlat */
+  transition: all 0.3s ease;/* İleride animasyon yaparsak yumuşak geçsin */
+}
