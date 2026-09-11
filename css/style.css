@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", sans-serif;
-
-  /* Tailwind v4 renk formatı */
+  --font-sans: 'Inter', sans-serif;
   --color-dark-bg: #09090b;
   --color-card-bg: #121215;
   --color-accent: #8b5cf6;
