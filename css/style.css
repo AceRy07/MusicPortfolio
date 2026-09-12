@@ -15,38 +15,40 @@
 }
 
 .hero-container {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/hero-bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.navbar {
-  
+.navbar{ 
+  padding: 1.5rem 7.5rem;
 }
 
-.navbar__logo {
-  color: #e9deca;
-  font-size: 1.5rem; /* Logo yazı boyutu */
+.hero-main {
+  margin-top: 15%;
 }
 
-.menu-btn {
-  width: 30px;
-  height: 24px;
-  background: transparent;  /* Arka plan şeffaf */
-  border: none;
-  cursor: pointer;
+.social-cap {
+  margin-top: 2rem;
+}
 
+.social {
+  border: 1px solid #ebeaed; /* Örnek renk ve kalınlık */
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;       /* Çizgileri dikeyde ortala */
+  align-items: center;
+  justify-content: center;  
 }
 
-.menu-btn__line {
-  width: 100%;              /* Kendi kutusunu tamamen kaplasın */
-  height: 4px;
-  background-color: #333;   /* Çizgi rengi (koyu gri/siyah) */
-  border-radius: 4px;       /* Çizgi köşelerini hafif yuvarlat */
-  transition: all 0.3s ease;/* İleride animasyon yaparsak yumuşak geçsin */
+.social i {
+  font-size: 1.5rem;
+}
+
+.social:hover {
+  background-color: #e6dfe6;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
