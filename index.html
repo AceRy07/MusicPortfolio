@@ -6,7 +6,7 @@
     <title>4Th</title>
 
     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
@@ -30,7 +30,7 @@
 <body class="bg-zinc-950 text-stone-200 font-sans antialiased">
 
     <!-- Hero Section -->
-    <section class="hero-container w-full relative min-h-screen flex flex-col justify-between px-6 py-8 md:px-16 lg:px-24">
+    <section class="hero-container w-full relative min-h-screen flex flex-col justify-between">
         <!-- Navbar: responsive -->
         <header class="navbar w-full flex justify-between items-center z-10">
             <div class="navbar__logo">
@@ -53,20 +53,59 @@
                 </h1>
             </div>
 
-            <div class="social-cap flex space-x-4 gap-10">
+            <div class="social-cap flex space-x-4 gap-10 text-2xl">
                 <div class="social">
                     <a href="https://open.spotify.com/artist/75oJKpP7nNrboNgYrXHqM1?si=pNH9bcDSQXSHp-wWFbDleQ"><i class="fa-brands fa-spotify"></i></a>
                 </div> 
                 <div class="social">
-                    <a href="https://www.threads.com/@ea4thquake"><i class="fa-brands fa-threads"></i></a>
+                    <a href="https://www.threads.com/@ea4thquake"><i class="fa-brands fa-threads text-2xl"></i></a>
                 </div>
                 <div class="social">
-                    <a href="https://www.instagram.com/ea4thquake/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/ea4thquake/"><i class="fa-brands fa-instagram text-2xl"></i></a>
                 </div>
             </div>
         </main>
     </section>
   
+
+    <section class="player w-full min-h-screen bg-[#0d0d0e] flex items-center">
+        <div class="player__container w-full flex items-center justify-center min-h-screen gap-16">
+            <article class="player__card flex items-center justify-center">
+                <div class="player__content flex items-center justify-start flex-col">
+                    <div class="player__cover ">
+                        <img class="player__cover-image w-90 h-90" src="assets/images/4AM.png" alt="">
+                    </div>
+
+                    <div class="player__title font-serif font-bold text-4xl flex items-start justify-start w-full">
+                        <span>4AM (Demo)</span>
+                    </div>
+
+                    <div class="player__progress">
+                        <div class="player__progress-bar">Bar</div>
+                    </div>
+
+                    <div class="player__time">time</div>
+
+                    <div class="player__controls">Controls</div>
+                </div>
+            </article>
+
+            <!-- Sağ Taraf: Müzik Listesi / Çalma Sırası -->
+            <aside class="player__queue flex flex-col space-y-4">
+                <div class="player__queue-item">
+                    <button class="player__queue-btn">
+                        <span class="player__queue-index">1</span>
+                        <div class="player__queue-info">
+                            <span class="player__queue-title">4AM</span>
+                        </div>
+                        <span class="player__queue-duration">4:00</span>
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
 
     <!-- Js Scripts -->
     <script src="js/app.js"></script>

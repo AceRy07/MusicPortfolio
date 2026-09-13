@@ -23,7 +23,17 @@
 
 .navbar{ 
   padding: 1.5rem 7.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+}
+
 
 .hero-main {
   margin-top: 15%;
@@ -43,12 +53,64 @@
   justify-content: center;  
 }
 
-.social i {
-  font-size: 1.5rem;
-}
-
 .social:hover {
   background-color: #e6dfe6;
   color: black;
   transition: background-color 0.3s, color 0.3s;
+}
+
+@media (max-width: 766px) {
+  .social {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social i {
+    font-size: 1.25rem; /* Adjust the icon size for smaller screens */
+    line-height: 36px; /* Vertically center the icon */
+  }
+}
+
+@media (max-width: 656px) {
+  .social {
+    width: 36px;
+    height: 36px;
+    
+  }
+
+  .social i {
+    font-size: 1.25rem; /* Adjust the icon size for smaller screens */
+  }
+}
+
+
+.player__container {
+  padding: 8rem 7.5rem ;
+}
+
+.player__card {
+  border: 1px solid #202020;
+  border-radius: 1rem; /* Add rounded corners */
+  overflow: hidden; /* Ensure content respects the border radius */
+  /* width: 27rem; 
+  height: 43rem;  */
+  background-color: #121215;
+  box-shadow: 0 25px 50px -12px rgba(0 0 0 / 0.25)
+}
+
+.player__content {
+  width: 26rem;
+  height: 39rem;
+}
+
+.player__cover {
+  border: 1px solid #202020;
+  border-radius: 0.8rem; /* Add rounded corners */
+  overflow: hidden; /* Ensure content respects the border radius */
+  margin: 1.7rem 1.7rem;
+}
+
+.player__title {
+  /* margin-top: 2.3rem; */
+  margin: 1rem 0 0 3.4rem;
 }
