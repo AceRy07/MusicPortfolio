@@ -68,12 +68,12 @@
     </section>
   
 
-    <section class="player w-full min-h-screen bg-[#0d0d0e] flex items-center">
-        <div class="player__container w-full flex items-center justify-center min-h-screen gap-16">
-            <article class="player__card flex items-center justify-center">
+    <section class="player w-full min-h-screen  flex items-center">
+        <div class="player__container w-full flex items-start justify-center min-h-screen gap-16">
+            <article class="player__card flex items-start justify-center w-1/4">
                 <div class="player__content flex items-center justify-start flex-col">
-                    <div class="player__cover ">
-                        <img class="player__cover-image w-90 h-90" src="assets/images/4AM.png" alt="">
+                    <div class="player__cover flex items-start">
+                        <img class="player__cover-image w-full h-full" src="assets/images/4AM.png" alt="">
                     </div>
 
                     <div class="player__title font-serif font-bold text-4xl flex items-start justify-start w-full">
@@ -91,14 +91,33 @@
             </article>
 
             <!-- Sağ Taraf: Müzik Listesi / Çalma Sırası -->
-            <aside class="player__queue flex flex-col space-y-4">
-                <div class="player__queue-item">
-                    <button class="player__queue-btn">
-                        <span class="player__queue-index">1</span>
-                        <div class="player__queue-info">
+            <aside class="player__queue flex w-1/4">
+                <div class="player__queue-item w-9/10">
+                    <button class="player__queue-btn flex w-full items-center w-full">
+                        <span class="player__queue-index w-1/12">1</span>
+                        <div class="player__queue-info w-8/12">
                             <span class="player__queue-title">4AM</span>
                         </div>
-                        <span class="player__queue-duration">4:00</span>
+                        <span class="player__queue-duration w-3/12">1:01</span>
+                    </button>
+
+                    <button id="player__queue-active" class="player__queue-btn flex w-full items-center w-full">
+                        <span class="player__queue-index w-1/12">2</span>
+                        <div class="player__queue-info w-8/12">
+                            <span class="player__queue-title">Dime of Hope</span>
+                        </div>
+                        <div class="player__queue-extra-container border w-1/13">
+                            <span class="player__queue-extra">E</span>
+                        </div>
+                        <span class="player__queue-duration w-3/12">3:28</span>
+                    </button>
+                    
+                     <button class="player__queue-btn flex w-full items-center w-full">
+                        <span class="player__queue-index w-1/12">1</span>
+                        <div class="player__queue-info w-8/12">
+                            <span class="player__queue-title">4AM</span>
+                        </div>
+                        <span class="player__queue-duration w-3/12">1:01</span>
                     </button>
                 </div>
             </aside>
