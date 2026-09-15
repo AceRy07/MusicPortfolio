@@ -15,9 +15,9 @@
 }
 
 .hero-container {
-  background-image: linear-gradient(rgba(55, 55, 55, 0.1) 20%, rgba(0, 0, 0, 0.9) 80%), url('/assets/images/hero-bg.jpg');
+  background-image: linear-gradient(rgba(55, 55, 55, 0.1) 20%, rgba(0, 0, 0, 0.9) 80%), url('/assets/images/Main-Image.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -91,7 +91,7 @@
   border: 1px solid #202020;
   border-radius: 1rem; /* Add rounded corners */
   overflow: hidden; /* Ensure content respects the border radius */
-  height: 52rem; 
+  height: 47rem; 
   background-color: #121215;
   box-shadow: 0 25px 50px -12px rgba(0 0 0 / 0.25)
 }
@@ -109,8 +109,8 @@
 }
 
 .player__title {
-  /* margin-top: 2.3rem; */
-  margin: 1rem 0 0 3.4rem;
+  margin-top: 0.7rem;
+  justify-content: center;
 }
 
 .player__queue {
