@@ -25,7 +25,7 @@
   padding: 1.5rem 7.5rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 99;
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
@@ -131,4 +131,18 @@
 #player__queue-active {
   background-color: #404041b5; /* Example active background color */
   border-radius: 1rem; /* Example active border radius */
+}
+
+@media (max-width: 440px) {
+  .player__container {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player__queue {
+    width: 100%;
+  }
 }
