@@ -25,14 +25,14 @@
 
     <!-- Custom Styles (if any) -->
     <link rel="stylesheet" href="css/output.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-zinc-950 text-stone-200 font-sans antialiased">
 
     <!-- Hero Section -->
     <section class="hero-container w-full relative min-h-screen flex flex-col justify-between">
         <!-- Navbar: responsive -->
-        <header class="navbar w-full flex justify-between items-center z-10 ">
+        <header class="navbar w-full flex justify-between items-center z-10">
             <div class="navbar__logo">
                 <a href="index.html" class="text-xl md:text-2xl font-semibold tracking-wider hover:opacity-80 transition-opacity">4Th</a>
             </div>
@@ -70,8 +70,8 @@
 
     <section class="player w-full min-h-screen flex items-center">
         <div class="player__container w-full flex items-start justify-center min-h-screen gap-16 ">
-            <article class="player__card flex items-start justify-center md:w-1/4">
-                <div class="player__content flex items-center justify-start flex-col">
+            <article class="player__card flex items-start justify-center md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:w-1/4">
+                <div class="player__content flex items-center justify-start flex-col md:w-full xs:w-full">
                     <div class="player__cover flex items-start">
                         <img id="player__cover-image" class="player__cover-image w-full h-full" src="assets/images/4AM.png" alt="">
                     </div>
@@ -108,14 +108,13 @@
                         <button id="player__repeat-btn" class="player__control-btn" aria-label="Repeat">
                             <i class="fa-solid fa-repeat"></i>
                         </button>
-                        
                     </div>
                 </div>
             </article>
 
             <!-- Sağ Taraf: Müzik Listesi / Çalma Sırası (JS ile data.js'den render edilir) -->
-            <aside class="player__queue flex w-1/4 ">
-                <div id="player__queue-list" class="player__queue-item w-9/10 "></div>
+            <aside class="player__queue flex w-1/3 md:w-1/3">
+                <div id="player__queue-list" class="player__queue-item w-full md:w-1/3"></div>
             </aside>
         </div>
     </section>
