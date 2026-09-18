@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+
+
+/* #region Hero Section Start */
+
 .hero-container {
   background-image: linear-gradient(rgba(55, 55, 55, 0.1) 20%, rgba(0, 0, 0, 0.9) 80%), url('/assets/images/Main-Image.jpg');
   background-size: cover;
@@ -26,6 +30,10 @@
   position: sticky;
   top: 0;
   z-index: 99;
+}
+
+.navbar__logo a{
+  font-size: 2.2rem;
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
@@ -83,6 +91,11 @@
   }
 }
 
+/* #endregion Hero Section End */
+
+
+/* #region Player Section Start */
+
 .player__container {
   padding: 8rem 7.5rem ;
 }
@@ -91,9 +104,21 @@
   border: 1px solid #202020;
   border-radius: 1rem; /* Add rounded corners */
   overflow: hidden; /* Ensure content respects the border radius */
-  height: 47rem; 
+  height: auto;
   background-color: #121215;
   box-shadow: 0 25px 50px -12px rgba(0 0 0 / 0.25)
+}
+
+@media (min-width: 1025px) {
+  .player__card {
+    /* height: 47rem; */
+  }
+}
+
+@media (max-width: 1700px) {
+  .player__card {
+    height: auto;
+  }
 }
 
 .player__content {
@@ -113,6 +138,105 @@
   justify-content: center;
 }
 
+.player__progress {
+  width: 100%;
+  padding: 1.5rem 1.7rem 0;
+}
+
+.player__progress-bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background-color: #333338;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.player__progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background-color: #e6dfd3;
+  pointer-events: none;
+}
+
+.player__progress-handle {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e6dfd3;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.player__time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1.7rem 0;
+  font-size: 0.75rem;
+  color: #a1a1aa;
+}
+
+.player__controls {
+  padding: 1.5rem 1.7rem;
+}
+
+#player__play-btn {
+  width: 4.25rem;
+  height: 4.25rem;
+  font-size: 1.3rem; /* Adjust the play button icon size */
+}
+
+.player__control-btn {
+  color: #e6dfd3;
+  font-size: 1.1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.player__control-btn:hover {
+  background-color: #e6d0d01a;
+}
+
+.player__control-btn--play {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.1rem;
+  background-color: #e6dfd3;
+  color: #121215;
+}
+
+.player__control-btn--play:hover {
+  background-color: #f4efe8;
+}
+
+.menu-btn--open .navbar__menu-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-btn--open .navbar__menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn--open .navbar__menu-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 .player__queue {
   border: 1px solid #202020;
   border-radius: 1rem; /* Add rounded corners to the queue container */
@@ -121,11 +245,17 @@
 }
 
 .player__queue-item {
-  margin: 0 auto; /* Center the queue item */
+  margin: 1.5rem auto; /* Center the queue item */
 }
 
 .player__queue-btn {
   padding: 2rem;
+  border-radius: 1rem;
+  transition: background-color 0.2s;
+}
+
+.player__queue-btn:hover {
+  background-color: #4040411a;
 }
 
 #player__queue-active {
@@ -133,16 +263,63 @@
   border-radius: 1rem; /* Example active border radius */
 }
 
-@media (max-width: 440px) {
+@media (max-width: 1024px) {
   .player__container {
     flex-direction: column;
     padding: 4rem 1.5rem;
-    height: 25rem;
+    height: auto;
     justify-content: center;
     align-items: center;
   }
 
   .player__queue {
-    width: 100%;
+    /* width: 80%; */
   }
 }
+
+@media  (max-width: 768px) {
+  .player__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .player__card {
+    width: 80%;
+    height: auto;
+  }
+
+  .player__queue {
+    width: 80%;
+  }
+}
+
+/* #endregion Player Section End */
+
+
+/* #region About Section Start */
+
+.about__image-container {
+  width: 25rem;
+  /* margin-left:15rem; */
+}
+
+.about__title-container {
+  margin-bottom: 3rem;
+}
+.about__description p {
+  margin-bottom: 1.5rem;
+}
+
+.about__signature-container{
+  margin: 3rem 0 0 2rem;;
+}
+
+.about__signature-line{
+  margin-top: 0.5rem;
+}
+
+/* #endregion About Section End */
