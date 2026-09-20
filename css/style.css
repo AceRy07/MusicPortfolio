@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 
 
 /* #region Hero Section Start */
@@ -32,7 +42,7 @@
   z-index: 99;
 } 
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .navbar {
     padding: 1rem 1.5rem;
   }
@@ -298,18 +308,24 @@
     align-items: center;
   }
 
+  .player__card {
+    width: 100%;
+  }
+
+  .player__queue {
+    width: 100%;
+  }
+
 }
 
-
-
-@media  (max-width: 768px) {
+/* @media  (max-width: 768px) {
   .player__container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-}
+} */
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .player__card {
@@ -329,6 +345,7 @@
 
 .about__image-container {
   width: 25rem;
+  max-width: 100%;
   /* margin-left:15rem; */
 }
 
@@ -347,3 +364,136 @@
   margin-top: 0.5rem;
 }
 /* #endregion About Section End */
+
+
+/* #region Responsive Adjustments */
+
+.player__queue-list {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .player__container {
+    gap: 2rem;
+  }
+
+  .player__card,
+  .player__queue {
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-main {
+    margin-top: 0;
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .hero-main h1 {
+    font-size: clamp(3.5rem, 18vw, 6rem);
+  }
+
+  .social-cap {
+    gap: 1rem;
+  }
+
+  .player__container {
+    padding: 3rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .player__card,
+  .player__queue {
+    width: 100%;
+  }
+
+  .player__cover {
+    margin: 1rem;
+  }
+
+  .player__title {
+    padding: 0 1rem;
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .player__progress {
+    padding: 1.25rem 1rem 0;
+  }
+
+  .player__time {
+    padding: 0.5rem 1rem 0;
+  }
+
+  .player__controls {
+    padding: 1rem;
+    gap: 0.25rem;
+  }
+
+  .player__control-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .player__queue-item {
+    margin: 0.75rem auto;
+  }
+
+  .player__queue-btn {
+    padding: 1rem;
+  }
+
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about__container {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .about__image-container,
+  .about__content {
+    width: 100%;
+    max-width: 32rem;
+  }
+
+  .about__title-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .about__description {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .about__description p {
+    margin-bottom: 1rem;
+  }
+
+  .about__signature-container {
+    margin: 2rem 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding-inline: 1rem;
+  }
+
+  .hero-main {
+    padding-inline: 1rem;
+  }
+
+  .player__controls {
+    gap: 0;
+  }
+
+  .player__control-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+/* #endregion Responsive Adjustments */
