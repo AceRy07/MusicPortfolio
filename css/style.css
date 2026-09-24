@@ -29,7 +29,7 @@ img {
 /* #region Hero Section Start */
 
 .hero-container {
-  background-image: linear-gradient(rgba(55, 55, 55, 0.1) 20%, rgba(0, 0, 0, 0.9) 80%), url('/assets/images/Main-Image.jpg');
+  background-image: linear-gradient(rgba(55, 55, 55, 0.1) 20%, rgba(0, 0, 0, 0.9) 80%), url('/assets/images/Main-Image.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
