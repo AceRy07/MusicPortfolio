@@ -5,7 +5,7 @@ const TRACKS = [
     subtitle: "4AM (Demo)",
     explicit: false,
     duration: "1:01",
-    src: "assets/audio/4AM (INSTURMENTAL - SMALL VOCALS).mp3",
-    cover: "assets/images/4AM.png"
+    src: "assets/audio/4AM (INSTRUMENTAL - SMALL VOCALS).mp3",
+    cover: "assets/images/4AM.webp"
   },
 ];
